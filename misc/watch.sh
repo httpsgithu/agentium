@@ -1,13 +1,14 @@
 #!/bin/bash
 
-export PATH="$(npm bin):$PATH"
 set -ex
 
-onchange \
+cd "$(dirname "$0")"/..
+./node_modules/.bin/onchange \
+  -v \
   -i \
   '**/*' \
-  -e 'build/**/*' \
-  -e 'build-edge/**/*' \
+  --exclude-path .gitignore \
+  -e '.git/**/*' \
   --await-write-finish \
   -- \
   npm run build
