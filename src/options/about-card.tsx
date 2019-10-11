@@ -61,7 +61,7 @@ class AboutCard extends React.Component<{}, {}> {
           <Typography>&nbsp;</Typography>
 
           <Typography>
-            Copyright &copy; 2018 Chuan Ji. All rights reserved.
+            Copyright &copy; 2019 Chuan Ji. All rights reserved.
           </Typography>
         </CardContent>
       </Paper>
